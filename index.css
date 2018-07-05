@@ -1,0 +1,51 @@
+.select-repo{
+    margin: 5px;
+    border: 2px solid black;
+    outline: 0;
+    min-width: 100px;
+}
+.destination{
+    border: 2px solid black;
+    margin: 5px;
+    padding: 2px;
+    display: inline-block;
+    width: 50%;
+    border-radius: 5px;
+}
+
+.file-path{
+    position: absolute;
+}
+
+.browse-path{
+    outline: 0;
+    opacity: 0;
+    width: 100%;
+}
+
+.log{
+    height: 400px;
+    width: 600px;
+    background-color: black;
+    color: #cbcd1c;
+    word-break: break-word;
+    overflow-y:auto;
+    margin: 5px;
+}
+
+.clone__btn, .kill__btn{
+    background-color: azure;
+    border: 2px solid #a59384;
+    outline: 0px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.kill__btn{
+    display: none;
+}
+
+.text{
+    margin: 5px;
+    display: inline-block;
+}

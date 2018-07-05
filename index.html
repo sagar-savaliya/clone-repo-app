@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <!-- All of the Node.js APIs are available in this renderer process. -->
-    We are using Node.js <script>document.write(process.versions.node)</script>,
-    Chromium <script>document.write(process.versions.chrome)</script>,
-    and Electron <script>document.write(process.versions.electron)</script>.
+    <title>Clone Repository</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<div class="app">
+    <span class="text">select repository:</span>
+    <select class="select-repo">
+        <option value="git@prod-gitlab.sprinklr.com:sprinklr/frontend/sprinklr-app-client.git">sprinklr-app-client</option>
+        <option value="git@prod-gitlab.sprinklr.com:sprinklr/main/sprinklr.app.git">sprinklr.app</option>
+        <option value="git@bitbucket.org:sprinklr/spr-paid-components.git">spr-paid-components</option>
+    </select>
+    <br/>
+    <span class="text">path:</span>
+    <div class="destination">
+        <span class="file-path"></span>
+        <input class='browse-path' type="file" webkitdirectory mozdirectory msdirectory odirectory directory multiple />
+    </div>
+    <br/>
+    <button class="clone__btn">clone</button>
+    <button class="kill__btn">kill</button>
+    <br/>
+    <textarea class="log" disabled="true"></textarea>
 
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
-  </body>
+</div>
+
+<script src="script.js"></script>
+</body>
 </html>

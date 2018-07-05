@@ -18,5 +18,10 @@
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^2.0.0"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "shelljs": "^0.8.2",
+    "tree-kill": "^1.2.0"
   }
 }
